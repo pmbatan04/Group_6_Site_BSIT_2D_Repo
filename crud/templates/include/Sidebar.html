@@ -1,0 +1,40 @@
+<!-- Top Navbar -->
+<nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200">
+  <div class="px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 me-3" alt="Flowbite Logo" />
+      <span class="text-xl font-semibold dark:text-white">PRM Corp.</span>
+    </div>
+    <div class="flex items-center">
+      <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="User" />
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="flex pt-16">
+  <!-- Sidebar -->
+  <aside class="w-64 h-screen bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <div class="p-4 space-y-4 font-medium text-gray-900 dark:text-white">
+      <a href="#" class="block px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">Gender List</a>
+      <a href="#" class="block px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">Add Gender</a>
+      <a href="#" class="block px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">User List</a>
+      <a href="#" class="block px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">Add User</a>
+    </div>
+  </aside>
+
+  <!-- Right Content: Gender Form -->
+  <main class="flex-1 p-6 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-md mx-auto bg-white p-6 rounded shadow-md dark:bg-gray-800">
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="gender" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gender</label>
+          <input type="text" id="gender" name="gender" class="block w-full p-2.5 border border-gray-300 rounded bg-gray-50 text-gray-900 text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Enter gender" required>
+        </div>
+        <button type="submit" class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded px-4 py-2 dark:bg-green-500 dark:hover:bg-green-600 focus:outline-none dark:focus:ring-green-800">
+          Save Gender
+        </button>
+      </form>
+    </div>
+  </main>
+</div>
